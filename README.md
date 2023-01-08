@@ -1,6 +1,9 @@
 # Notes
 
+## Database
+
 Setup with a free online PostgreSQL database ElephantSQL using the TinyTurtle tier.
+elephantsql.com
 
 Get the URL ( you will get it from the Details of your instance) in a user-secret like this:
 
@@ -12,7 +15,25 @@ https://customer.elephantsql.com/instance
 
 There you can setup the database, with all the information contained in the `/sql` folder.
 
-# Runing backend
+This has been deployed online with Railway at:
+https://homeworked.up.railway.app/
+
+Here is some more information if you want it:
+
+In Variables are entered PGURL ( with the value from your Database provider )
+and PORT ( probably 3000 ) check what port Railway uses.
+
+Note this is an example project, and the information in the database is not confidential in any way.
+
+## Deployment
+
+Deployed for free on Heroku at the following URL:
+
+
+Used the following buildpack to be able to deploy this dotnet core project on Heroku:
+https://github.com/jincod/dotnetcore-buildpack
+
+# Running locally etc
 
 `dotnet run`
 
