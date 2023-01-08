@@ -7,6 +7,16 @@ comment TEXT,
 annotation TEXT
 );
 
+CREATE TABLE childrenshomework (
+id serial PRIMARY KEY,
+homeworkId INTEGER REFERENCES homework (id) NOT NULL,
+childId INTEGER REFERENCES children (id) NOT NULL,
+image TEXT,
+comment TEXT,
+annotation TEXT
+);
+
+
 INSERT INTO childrensHomework (homeworkId, childId, image, comment, annotation)
  VALUES
  (1,1, 'https://homelearnhut.s3.eu-west-2.amazonaws.com/done/m-eng.png' , null , null )

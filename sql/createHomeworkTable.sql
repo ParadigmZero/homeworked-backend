@@ -7,6 +7,16 @@ dateDue TEXT,
 comment TEXT
 );
 
+CREATE TABLE homework (
+id serial PRIMARY KEY, 
+name TEXT NOT NULL,
+image TEXT NOT NULL,
+dateSet DATE DEFAULT CURRENT_DATE,
+dateDue TEXT,
+comment TEXT
+);
+
+
 INSERT INTO homework (name, image, dateSet, dateDue, comment) VALUES 
 ('English - Conjunctions','https://homelearnhut.s3.eu-west-2.amazonaws.com/homework/eng.PNG','2020-09-14' ,'Wednesday','Complete each sentence using the correct conjunction. Make sure to read the sentences carefully as you will be using them in class later this week.'),
 ('Maths - Missing Numbers','https://homelearnhut.s3.eu-west-2.amazonaws.com/homework/maths4.PNG','2020-09-25' ,'Monday','Count carefully to find the missing numbers. They are missing from a hundred square and a number line.'),
