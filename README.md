@@ -1,4 +1,6 @@
-# Notes
+# Setup
+
+You will need the .NET SDK (using version 7 here) installed, in order to run this project.
 
 ## Database
 

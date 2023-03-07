@@ -31,6 +31,10 @@ public class HomeworkController : Controller
         try
         {
             await _homeworkRepository.Insert(homework);
+            // return all homework after posting a new piece of homework
+            var homework = await _homeworkRepository.GetAll();
+            return Ok(homework);
+
         }
         catch (Exception error)
         {
@@ -45,6 +49,8 @@ public class HomeworkController : Controller
         try
         {
             await _homeworkRepository.Update(id, child.Id, child.Image, child.Comment, child.Annotation);
+            var homework = await _homeworkRepository.GetAll();
+            return Ok(homework);
         }
         catch (Exception error)
         {
