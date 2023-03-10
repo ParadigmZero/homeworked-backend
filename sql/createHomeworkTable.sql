@@ -36,3 +36,7 @@ INSERT INTO homework (name, image, dateSet, dateDue, comment) VALUES
 ('Phonics','https://homelearnhut.s3.eu-west-2.amazonaws.com/homework/phonics2.PNG','2021-06-04' ,'Wednesday','Read each word carefully, what sounds can you hear? Match the word to the correct picture.'),
 ('Maths - Five Times Table','https://homelearnhut.s3.eu-west-2.amazonaws.com/homework/maths.PNG','2021-06-14' ,'Wednesday','Start with part A of the varied fluency before moving on to part B.'),
 ('Geography - Identify continents and oceans','https://homelearnhut.s3.eu-west-2.amazonaws.com/homework/geo.PNG','2021-07-09' ,'Monday','Go to youtube and listen to the songs we learnt in class to help you remember.');
+
+SELECT * FROM homework;
+
+DROP TABLE homework; 

@@ -1,4 +1,4 @@
--- Testing the INSERT
+-- Deleting any added homeworks
 select * from childrensHomework;
 DELETE FROM childrensHomework WHERE id>324;
 

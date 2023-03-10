@@ -31,3 +31,7 @@ INSERT INTO children (name, avatar) VALUES
 ('Olivia','https://homelearnhut.s3.eu-west-2.amazonaws.com/avatars/16.png'),
 ('Peppa','https://homelearnhut.s3.eu-west-2.amazonaws.com/avatars/14.png'),
 ('Wyatt','https://homelearnhut.s3.eu-west-2.amazonaws.com/avatars/18.png');
+
+SELECT * FROM children;
+
+DROP TABLE children; 

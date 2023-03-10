@@ -344,3 +344,7 @@ INSERT INTO childrensHomework (homeworkId, childId, image, comment, annotation)
 , (18,17, 'https://homelearnhut.s3.eu-west-2.amazonaws.com/done/m-geo.png' , null , null )
 , (18,18, 'https://homelearnhut.s3.eu-west-2.amazonaws.com/done/m-geo.png' , null , null )
 ;
+
+SELECT * FROM childrensHomework;
+
+DROP TABLE childrensHomework;

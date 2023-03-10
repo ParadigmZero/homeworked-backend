@@ -15,8 +15,6 @@ public class HomeworkRepository : BaseRepository, IHomework<Homework>
         using var connection = CreateConnection();
         List<Homework> homework = (List<Homework>)await connection.QueryAsync<Homework>("SELECT * FROM homework;");
 
-        // Console.WriteLine("Get all homework");
-
         for (int i = 0; i < homework.Count; i++)
         {
             homework[i].children = (List<Child>)await connection.QueryAsync<Child>(@"
