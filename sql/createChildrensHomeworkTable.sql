@@ -1,14 +1,5 @@
 CREATE TABLE childrenshomework (
-id serial NOT NULL,
-homeworkId INTEGER REFERENCES homework (id) NOT NULL,
-childId INTEGER REFERENCES children (id) NOT NULL,
-image TEXT,
-comment TEXT,
-annotation TEXT
-);
-
-CREATE TABLE childrenshomework (
-id serial PRIMARY KEY,
+id serial NOT NULL PRIMARY KEY,
 homeworkId INTEGER REFERENCES homework (id) NOT NULL,
 childId INTEGER REFERENCES children (id) NOT NULL,
 image TEXT,

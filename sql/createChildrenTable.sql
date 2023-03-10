@@ -4,13 +4,6 @@ name TEXT NOT NULL,
 avatar TEXT NOT NULL
 );
 
-CREATE TABLE children (
-id serial PRIMARY KEY,
-name TEXT NOT NULL,
-avatar TEXT NOT NULL
-);
-
-
 
 INSERT INTO children (name, avatar) VALUES 
 ('Amelia','https://homelearnhut.s3.eu-west-2.amazonaws.com/avatars/1.png'),
