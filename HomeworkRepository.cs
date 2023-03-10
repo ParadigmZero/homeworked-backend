@@ -67,4 +67,28 @@ public class HomeworkRepository : BaseRepository, IHomework<Homework>
                 Annotation = annotation
             });
     }
+
+    // Delete a piece of homework
+    public async Task Delete(long id)
+    {
+        using var connection = CreateConnection();
+
+        await connection.ExecuteAsync(@"
+            DELETE FROM childrensHomework 
+            WHERE homeworkid= @HomeworkId;",
+            new
+            {
+                HomeworkId = id,
+            });
+
+        await connection.ExecuteAsync(@"
+            DELETE FROM homework 
+            WHERE id= @Id;",
+            new
+            {
+                Id = id,
+            });
+        
+
+    }
 }

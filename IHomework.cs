@@ -6,4 +6,5 @@ public interface IHomework<T>
     Task<IEnumerable<T>> GetAll();
     Task Insert(T t);
     Task Update(long id, long childId, string image, string comment, string annotation);
+    Task Delete(long id);
 }

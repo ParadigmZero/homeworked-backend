@@ -52,4 +52,19 @@ public class HomeworkController : Controller
             Console.WriteLine(error.StackTrace);
         }
     }
+    
+    [HttpDelete("{id}")]
+    public async Task Delete(long id)
+    {
+        try
+        {
+            await _homeworkRepository.Delete(id);
+        }
+        catch (Exception error)
+        {
+            Console.WriteLine(error.Message);
+            Console.WriteLine(error.StackTrace);
+        }
+    }
+
 }
