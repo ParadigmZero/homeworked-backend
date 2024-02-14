@@ -1,6 +1,15 @@
 # Setup
 
-Required .NET SDK installed to run.
+Requires Microsoft .NET SDK 8.0 installed to run. This was developed on 7, but just put over to 8.
+
+# Other pre-requisite steps
+
+<https://aka.ms/aspnet/https-trust-dev-cert>
+
+Linux:
+<https://aka.ms/dev-certs-trust>
+
+dotnet dev-certs https --trust
 
 ## Running
 
