@@ -1,25 +1,36 @@
 # Setup
 
-Requires Microsoft .NET SDK 8.0 installed to run. This was developed on 7, but just put over to 8.
-
-# Other pre-requisite steps
-
-<https://aka.ms/aspnet/https-trust-dev-cert>
-
-Linux:
-<https://aka.ms/dev-certs-trust>
-
-dotnet dev-certs https --trust
+Requires Microsoft .NET SDK 8.0 installed to run. This was developed on 7, but put settings as 8.
 
 ## Running
 
 `dotnet run`
 
-or interactive run
+or interactive run:
 
 `dotnet watch`
 
 # Setting up your database
+
+## Local/Docker
+
+Docker needs to be installed.
+
+Database up and seed with example data:
+
+`docker compose up -d`
+
+Database down
+
+`docker compose down -d`
+
+Set the user secrets to use this database:
+
+dotnet user-secrets set PGURL "postgresql://user:password@localhost:5432/database"
+
+## Deployed database ideas
+
+For a deployed database here are some ideas for a free PostgreSQL database.
 
 I setup with a free online PostgreSQL database ElephantSQL using the TinyTurtle (free) tier.
 ( see <https://www.elephantsql.com/> )
