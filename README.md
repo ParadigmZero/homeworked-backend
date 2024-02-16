@@ -1,3 +1,8 @@
+Backend (NodeJS with TypeScript) to the HomeWorked, frontend found here: <https://github.com/ParadigmZero/HomeWorkedFrontend>
+
+S3 bucket and object setup info here:
+<https://github.com/ParadigmZero/homeworked-terraform-iac>
+
 # Setup
 
 Requires Microsoft .NET SDK 8.0 installed to run. This was developed on 7, but put settings as 8.
